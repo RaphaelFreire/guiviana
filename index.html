@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gui Viana — Personal Trainer Online</title>
+    <meta
+      name="description"
+      content="Treino online para mulheres: consultoria, avaliação física e acompanhamento de perto. Treine de qualquer lugar e alcance seus resultados."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ============ HEADER / NAV ============ -->
+    <header class="header" id="header">
+      <nav class="nav">
+        <a class="logo" href="#">Gui<span class="grad-text">Viana</span></a>
+        <div class="nav-links">
+          <a href="#sobre">Sobre</a>
+          <a href="#planos">Planos</a>
+          <a href="#resultados">Resultados</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <div class="nav-actions">
+          <a class="btn btn-primary" href="#planos">Assinar plano</a>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#sobre">Sobre</a>
+        <a href="#planos">Planos</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#contato">Contato</a>
+        <a class="btn btn-primary" href="#planos">Assinar plano</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ HERO ============ -->
+      <section class="container hero reveal">
+        <div class="hero__text">
+          <span class="eyebrow eyebrow--pill"
+            >Treino online para mulheres · 100% pelo app</span
+          >
+          <h1 class="title-xl">
+            Mais forte,<br />mais você,<br /><span class="grad-text"
+              >todo dia.</span
+            >
+          </h1>
+          <p class="lead" style="">
+            Consultoria online e avaliação física feitas pra você emagrecer,
+            ganhar força e criar uma rotina que finalmente se mantém — com
+            treino sob medida e meu acompanhamento de perto, de onde você
+            estiver.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#planos">Assinar meu plano →</a>
+            <a class="btn btn-ghost" href="#contato">Falar no WhatsApp</a>
+          </div>
+          <div class="stats">
+            <div>
+              <div class="stat__num">+200</div>
+              <div class="stat__label">alunas</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div>
+              <div class="stat__num">5 anos</div>
+              <div class="stat__label">de experiência</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div>
+              <div class="stat__num">4,9★</div>
+              <div class="stat__label">avaliação</div>
+            </div>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media__blob"></div>
+          <img
+            class="photo hero-photo"
+            src="./assets/modelo.png"
+            alt="imagem principal"
+          />
+          <div class="float-card">
+            <small>Resultado da aluna</small>
+            <b>−8kg <span>/ 12 sem</span></b>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SOBRE ============ -->
+      <section class="section section--surface reveal" id="sobre">
+        <div class="container split">
+          <div class="split__media">
+            <img
+              class="photo"
+              src="./assets/guiviana.png"
+              width="auto"
+              alt="imagem principal"
+            />
+          </div>
+          <div class="split__text">
+            <span class="eyebrow">Sobre mim</span>
+            <h2 class="title-lg">Oi, eu sou o Gui Viana</h2>
+            <p class="lead">
+              Personal trainer há 5 anos, especializado em treino online para
+              mulheres. Já são mais de 200 alunas treinando comigo de todo o
+              Brasil — em casa, na academia ou viajando. Pra mim, o melhor
+              treino é o que você consegue manter: por isso monto tudo a partir
+              da sua avaliação, da sua rotina e dos seus objetivos, e acompanho
+              de perto pra ajustar sempre que precisar.
+            </p>
+            <ul class="checklist">
+              <li>
+                <span class="check">✓</span> Treino e avaliação 100%
+                personalizados pra você
+              </li>
+              <li>
+                <span class="check">✓</span> Acompanhamento real comigo — nada
+                de plano genérico
+              </li>
+              <li>
+                <span class="check">✓</span> Treine onde quiser, com o
+                equipamento que tiver
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ COMO FUNCIONA ============ -->
+      <section class="section section--dark reveal">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow eyebrow--light">Simples do começo ao fim</span>
+            <h2 class="title-lg">Como funciona?</h2>
+            <p class="muted-light">
+              Da assinatura ao primeiro treino você nunca fica perdida. É tudo
+              guiado, passo a passo, comigo do seu lado.
+            </p>
+          </div>
+          <div class="grid grid--steps stagger">
+            <div class="step">
+              <div class="step__n">1</div>
+              <h3>Assine e receba o acesso</h3>
+              <p>
+                Depois de confirmar a inscrição e o pagamento, você recebe o
+                link pra acessar o app de treinos no seu celular.
+              </p>
+            </div>
+            <div class="step">
+              <div class="step__n">2</div>
+              <h3>Conte sobre você</h3>
+              <p>
+                Você preenche uma anamnese pra eu te conhecer e a gente conversa
+                pra alinhar objetivos, rotina e o seu plano.
+              </p>
+            </div>
+            <div class="step">
+              <div class="step__n">3</div>
+              <h3>Treine com tudo na mão</h3>
+              <p>
+                Seus treinos chegam no app com vídeo de cada exercício. É só
+                abrir e treinar — em casa, na academia ou onde estiver.
+              </p>
+            </div>
+            <div class="step">
+              <div class="step__n">4</div>
+              <h3>Evolua com acompanhamento</h3>
+              <p>
+                Fazemos check-ins regulares pra ver como você está indo e eu
+                ajusto seu treino todo mês conforme sua evolução.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ O QUE VOCÊ RECEBE ============ -->
+      <section class="section reveal">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Tudo incluído no seu plano</span>
+            <h2 class="title-lg" style="">
+              Tudo o que você precisa pra treinar em qualquer lugar e
+              <span class="grad-text">emagrecer</span>
+            </h2>
+          </div>
+          <div class="grid grid--value stagger">
+            <div class="value-card">
+              <span class="value-card__n">01</span>
+              <h3>Treinos personalizados</h3>
+              <p>
+                Montados pra você: pra cada objetivo, cada nível e os dias que
+                você realmente tem pra treinar.
+              </p>
+            </div>
+            <div class="value-card">
+              <span class="value-card__n">02</span>
+              <h3>Acompanhamento de perto</h3>
+              <p>
+                Pra te manter motivada, treinar do jeito certo e tirar todas as
+                suas dúvidas comigo.
+              </p>
+            </div>
+            <div class="value-card">
+              <span class="value-card__n">03</span>
+              <h3>Materiais de apoio</h3>
+              <p>
+                Planners, e-books e dicas pra você ter uma vida mais saudável e
+                ativa também fora do treino.
+              </p>
+            </div>
+            <div class="value-card">
+              <span class="value-card__n">04</span>
+              <h3>Vídeos explicativos</h3>
+              <p>
+                De todos os treinos e exercícios, pra você executar com técnica
+                e não errar nada.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TREINE PELO APP ============ -->
+      <section class="section section--surface reveal">
+        <div class="container split">
+          <div class="split__text">
+            <span class="eyebrow">Plataforma profissional</span>
+            <h2 class="title-md">Treine pelo app, com tudo na palma da mão</h2>
+            <p class="lead">
+              Nada de PDF perdido no WhatsApp. Seus treinos, vídeos, avaliações
+              e evolução ficam organizados em um app profissional — fácil de
+              usar e feito pra te guiar em cada série.
+            </p>
+            <div class="grid grid--mini">
+              <div class="feature">
+                <span class="feature__icon"
+                  ><svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="6" y="3" width="12" height="18" rx="2"></rect>
+                    <path d="M9 3h6v3H9z"></path>
+                    <path d="M9 11h6M9 15h4"></path></svg
+                ></span>
+                <div>
+                  <b>Avaliação física online</b
+                  ><span>Completa e 100% à distância</span>
+                </div>
+              </div>
+              <div class="feature">
+                <span class="feature__icon"
+                  ><svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path
+                      d="M10 9l5 3-5 3z"
+                      fill="currentColor"
+                      stroke="none"
+                    ></path></svg
+                ></span>
+                <div>
+                  <b>+1.800 vídeos</b
+                  ><span>Demonstração de cada exercício</span>
+                </div>
+              </div>
+              <div class="feature">
+                <span class="feature__icon"
+                  ><svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 21s-7-4.6-7-10.2A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7 3.8C19 16.4 12 21 12 21z"
+                    ></path></svg
+                ></span>
+                <div>
+                  <b>Anamnese inteligente</b
+                  ><span>Pra montar o plano certo pra você</span>
+                </div>
+              </div>
+              <div class="feature">
+                <span class="feature__icon"
+                  ><svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="7" y="2" width="10" height="20" rx="2.5"></rect>
+                    <line x1="11" y1="18" x2="13" y2="18"></line></svg
+                ></span>
+                <div>
+                  <b>Tudo no celular</b
+                  ><span>Treino, dúvidas e evolução num só lugar</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <img
+              src="./assets/celular.png"
+              width="auto"
+              alt="imagem principal"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PLANOS ============ -->
+      <section class="section reveal" id="planos">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Planos</span>
+            <h2 class="title-lg">Escolha e comece hoje</h2>
+            <p class="lead">
+              Sem fidelidade — pague no PIX, boleto ou cartão e cancele quando
+              quiser. Todos os planos incluem avaliação física, anamnese, treino
+              personalizado e o meu acompanhamento.
+            </p>
+          </div>
+          <div class="grid grid--plans stagger">
+            <div class="plan">
+              <div class="plan__name">Mensal</div>
+              <div>
+                <span class="plan__price">R$197</span
+                ><span class="plan__per">/mês</span>
+              </div>
+              <div class="plan__rule"></div>
+              <ul>
+                <li>Treino personalizado</li>
+                <li>Avaliação física inicial</li>
+                <li>Ajustes mensais</li>
+                <li>Suporte no WhatsApp</li>
+              </ul>
+              <a class="btn btn-sm" href="#contato">Assinar</a>
+            </div>
+            <div class="plan plan--featured">
+              <span class="badge-pop">Mais popular</span>
+              <div class="plan__name">Trimestral</div>
+              <div>
+                <span class="plan__price">R$157</span
+                ><span class="plan__per">/mês</span>
+              </div>
+              <div class="plan__rule"></div>
+              <ul>
+                <li>Tudo do mensal</li>
+                <li>Ajustes a cada 15 dias</li>
+                <li>Reavaliação trimestral</li>
+                <li>App de acompanhamento</li>
+              </ul>
+              <a class="btn btn-sm" href="#contato">Assinar agora</a>
+            </div>
+            <div class="plan">
+              <div class="plan__name">Anual</div>
+              <div>
+                <span class="plan__price">R$127</span
+                ><span class="plan__per">/mês</span>
+              </div>
+              <div class="plan__rule"></div>
+              <ul>
+                <li>Tudo do trimestral</li>
+                <li>Ajustes semanais</li>
+                <li>2 reavaliações</li>
+                <li>Melhor custo-benefício</li>
+              </ul>
+              <a class="btn btn-sm" href="#contato">Assinar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ GARANTIA ============ -->
+      <section class="cta reveal">
+        <div class="container" style="">
+          <div class="trust grid grid--trust">
+            <div class="feature">
+              <span class="feature__icon"
+                ><svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"
+                  ></path>
+                  <path d="M9 12l2 2 4-4"></path></svg
+              ></span>
+              <div>
+                <b>Garantia de 7 dias</b
+                ><span>Não gostou? Devolvo seu dinheiro.</span>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature__icon"
+                ><svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="5" width="20" height="14" rx="3"></rect>
+                  <line x1="2" y1="10" x2="22" y2="10"></line></svg
+              ></span>
+              <div>
+                <b>PIX, boleto ou cartão</b
+                ><span>Pagamento seguro, em até 12x.</span>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature__icon"
+                ><svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 13l4 4L19 7"></path></svg
+              ></span>
+              <div>
+                <b>Sem fidelidade</b
+                ><span>Cancele quando quiser, sem multa.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ RESULTADOS ============ -->
+      <section class="section section--surface reveal" id="resultados">
+        <div class="container">
+          <div class="section-head" style="">
+            <span class="eyebrow">Resultados reais</span>
+            <h2 class="title-lg">Antes &amp; depois</h2>
+          </div>
+          <div class="grid grid--results stagger">
+            <div class="ba">
+              <div class="ba__pair">
+                <div class="ba__img">
+                  <span class="tag tag--before">ANTES</span>
+                  <div class="photo photo--r16">
+                    <img
+                      src="./assets/antes-branca.png"
+                      width="auto"
+                      alt="imagem principal"
+                    />
+                  </div>
+                </div>
+                <div class="ba__img">
+                  <span class="tag tag--after">DEPOIS</span>
+                  <div class="photo photo--r16">
+                    <img
+                      src="./assets/depois-branca.png"
+                      width="auto"
+                      alt="imagem principal"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="ba__foot">
+                <b>Marina, 31 anos</b><span class="ba__metric">−8kg</span>
+              </div>
+            </div>
+            <div class="ba">
+              <div class="ba__pair">
+                <div class="ba__img">
+                  <span class="tag tag--before">ANTES</span>
+                  <div class="photo photo--r16">
+                    <img
+                      src="./assets/antes-morena.png"
+                      width="auto"
+                      alt="imagem principal"
+                    />
+                  </div>
+                </div>
+                <div class="ba__img">
+                  <span class="tag tag--after">DEPOIS</span>
+                  <div class="photo photo--r16">
+                    <img
+                      src="./assets/depois-morena.png"
+                      width="auto"
+                      alt="imagem principal"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="ba__foot">
+                <b>Júlia, 27 anos</b><span class="ba__metric">+ definição</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ DEPOIMENTOS ============ -->
+      <section class="section reveal">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="title-md">O que as alunas dizem</h2>
+          </div>
+          <div class="grid grid--testi stagger">
+            <div class="card">
+              <div class="stars">★★★★★</div>
+              <p class="quote">
+                "Nunca consegui manter uma rotina até conhecer o Gui. Treino em
+                casa e finalmente vejo resultado."
+              </p>
+              <div class="author">
+                <span class="avatar">M</span>
+                <div><b>Marina S.</b><span>aluna há 8 meses</span></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="stars">★★★★★</div>
+              <p class="quote">
+                "O acompanhamento é de verdade, responde rápido e ajusta tudo
+                pra mim. Vale cada centavo."
+              </p>
+              <div class="author">
+                <span class="avatar">J</span>
+                <div><b>Júlia R.</b><span>aluna há 1 ano</span></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="stars">★★★★★</div>
+              <p class="quote">
+                "Avaliação completa e treino que respeita meus dias. Recomendo
+                de olhos fechados."
+              </p>
+              <div class="author">
+                <span class="avatar">C</span>
+                <div><b>Carla M.</b><span>aluna há 6 meses</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section class="section section--surface reveal">
+        <div class="container faq">
+          <div class="section-head">
+            <span class="eyebrow">Tirando suas dúvidas</span>
+            <h2 class="title-md">Perguntas frequentes</h2>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item open">
+              <button class="faq-q">
+                <b>Nunca treinei na vida. Serve pra mim?</b
+                ><span class="faq-sign"></span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  Serve, sim. Começo exatamente do seu nível, com exercícios
+                  simples e vídeo de cada um. Você evolui no seu ritmo, sem
+                  pressa e sem se machucar.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q">
+                <b>Não tenho academia. Dá pra treinar em casa?</b
+                ><span class="faq-sign"></span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  Dá. Monto seu treino com o que você tem — em casa, no parque
+                  ou na academia. Se quiser, dá pra começar só com o peso do
+                  corpo.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q">
+                <b>Como é o acompanhamento?</b><span class="faq-sign"></span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  Direto comigo, não com robô. Falamos pelo WhatsApp pra tirar
+                  dúvidas e fazemos check-ins pra ajustar seu treino conforme
+                  você evolui.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q">
+                <b>Em quanto tempo vejo resultado?</b
+                ><span class="faq-sign"></span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  Com constância, a maioria das alunas sente diferença em
+                  disposição e força nas primeiras semanas e vê mudança no corpo
+                  a partir de 8 a 12 semanas.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q">
+                <b>Como funciona o pagamento?</b><span class="faq-sign"></span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  Você escolhe o plano (mensal, trimestral ou anual) e paga no
+                  PIX, boleto ou cartão em até 12x. Sem fidelidade — cancela
+                  quando quiser.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q">
+                <b>E se eu não me adaptar?</b><span class="faq-sign"></span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  Você tem 7 dias de garantia. Se sentir que não é pra você,
+                  devolvo 100% do valor, sem burocracia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ GALERIA ============
+      <section class="section reveal">
+        <div class="container">
+          <div class="grid grid--gallery stagger">
+            <div class="photo photo--r18" style="">Foto</div>
+            <div class="photo photo--r18">Foto</div>
+            <div class="photo photo--r18">Foto</div>
+            <div class="photo photo--r18">Foto</div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- ============ CTA FINAL ============ -->
+      <section class="section reveal" id="contato">
+        <div class="container">
+          <div class="cta__inner">
+            <h2>Pronta para começar?</h2>
+            <p>
+              Assine hoje e, em até 48h, você recebe sua anamnese, sua avaliação
+              física e o primeiro treino direto no app. Bora começar essa
+              jornada juntas?
+            </p>
+            <div class="btn-row btn-row--center">
+              <a class="btn btn-light" href="#planos">Assinar meu plano</a>
+              <a class="btn btn-outline-white" href="#">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="logo">Gui<span class="grad-text">Viana</span></div>
+      <div class="footer__meta">
+        @personal.guiiviana · contato@guiviana.com.br
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
