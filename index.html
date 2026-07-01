@@ -65,6 +65,7 @@
       rel="preload"
       as="image"
       href="./assets/modelo.png"
+      type="image/avif"
       fetchpriority="high"
     />
 
@@ -307,15 +308,27 @@
         </div>
         <div class="media">
           <div class="media__blob"></div>
-          <img
-            class="photo hero-photo"
-            width="530"
-            height="auto"
-            src="./assets/modelo.png"
-            alt="Gui Viana, personal trainer, orientando o treino de uma aluna"
-            fetchpriority="high"
-            decoding="async"
-          />
+          <picture>
+            <source
+              type="image/avif"
+              srcset="./assets/modelo-560.avif 560w"
+              sizes="(max-width: 760px) 100vw, 560px"
+            />
+            <source
+              type="image/webp"
+              srcset="./assets/modelo-560.webp 560w"
+              sizes="(max-width: 760px) 100vw, 560px"
+            />
+            <img
+              class="photo hero-photo"
+              src="./assets/modelo.png"
+              width="560"
+              height="auto"
+              alt="Gui Viana, personal trainer, orientando o treino de uma aluna"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </picture>
           <div class="float-card">
             <small>Resultado da aluna</small>
             <b>−8kg <span>/ 12 sem</span></b>
@@ -331,15 +344,19 @@
       >
         <div class="container split">
           <div class="split__media">
-            <img
-              class="photo"
-              src="./assets/guiviana.png"
-              width="500"
-              height="auto"
-              alt="Gui Viana sorrindo, personal trainer especializado em treino online para mulheres"
-              loading="lazy"
-              decoding="async"
-            />
+            <picture>
+              <source type="image/avif" srcset="./assets/guiviana-500.avif" />
+              <source type="image/webp" srcset="./assets/guiviana-500.webp" />
+              <img
+                class="photo"
+                src="./assets/guiviana.png"
+                width="500"
+                height="auto"
+                alt="Gui Viana sorrindo, personal trainer especializado em treino online para mulheres"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </div>
           <div class="split__text">
             <span class="eyebrow">Sobre mim</span>
@@ -570,14 +587,21 @@
             </div>
           </div>
           <div class="media">
-            <img
-              src="./assets/celular.png"
-              width="400"
-              height="auto"
-              alt="Tela do aplicativo de treinos mostrando os exercícios do dia no celular"
-              loading="lazy"
-              decoding="async"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="./assets/celular-480.webp 480w"
+                sizes="(max-width: 760px) 100vw, 480px"
+              />
+              <img
+                src="./assets/celular.png"
+                width="480"
+                height="auto"
+                alt="Tela do aplicativo de treinos mostrando os exercícios do dia no celular"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -736,27 +760,63 @@
                 <div class="ba__img">
                   <span class="tag tag--before">ANTES</span>
                   <div class="photo photo--r16">
-                    <img
-                      src="./assets/antes-branca.png"
-                      width="458"
-                      height="601"
-                      alt="Marina antes de iniciar o treino com o Gui Viana"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="
+                          ./assets/antes-branca-300.avif 300w,
+                          ./assets/antes-branca-458.avif 458w
+                        "
+                        sizes="(max-width: 480px) 40vw, 220px"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./assets/antes-branca-300.webp 300w,
+                          ./assets/antes-branca-458.webp 458w
+                        "
+                        sizes="(max-width: 480px) 40vw, 220px"
+                      />
+                      <img
+                        src="./assets/antes-branca.png"
+                        width="458"
+                        height="auto"
+                        alt="Marina antes de iniciar o treino com o Gui Viana"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
                   </div>
                 </div>
                 <div class="ba__img">
                   <span class="tag tag--after">DEPOIS</span>
                   <div class="photo photo--r16">
-                    <img
-                      src="./assets/depois-branca.png"
-                      width="458"
-                      height="565"
-                      alt="Marina depois de 12 semanas de treino com o Gui Viana, resultado de -8kg"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="
+                          ./assets/depois-branca-300.avif 300w,
+                          ./assets/depois-branca-458.avif 458w
+                        "
+                        sizes="(max-width: 480px) 40vw, 220px"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./assets/depois-branca-300.webp 300w,
+                          ./assets/depois-branca-458.webp 458w
+                        "
+                        sizes="(max-width: 480px) 40vw, 220px"
+                      />
+                      <img
+                        src="./assets/depois-branca.png"
+                        width="458"
+                        height="auto"
+                        alt="Marina depois de 12 semanas de treino com o Gui Viana, resultado de -8kg"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
                   </div>
                 </div>
               </div>
@@ -769,27 +829,63 @@
                 <div class="ba__img">
                   <span class="tag tag--before">ANTES</span>
                   <div class="photo photo--r16">
-                    <img
-                      src="./assets/antes-morena.png"
-                      width="459"
-                      height="625"
-                      alt="Júlia antes de iniciar o treino com o Gui Viana"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="
+                          ./assets/antes-morena-300.avif 300w,
+                          ./assets/antes-morena-459.avif 459w
+                        "
+                        sizes="(max-width: 480px) 40vw, 220px"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./assets/antes-morena-300.webp 300w,
+                          ./assets/antes-morena-459.webp 459w
+                        "
+                        sizes="(max-width: 480px) 40vw, 220px"
+                      />
+                      <img
+                        src="./assets/antes-morena.png"
+                        width="459"
+                        height="auto"
+                        alt="Júlia antes de iniciar o treino com o Gui Viana"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
                   </div>
                 </div>
                 <div class="ba__img">
                   <span class="tag tag--after">DEPOIS</span>
                   <div class="photo photo--r16">
-                    <img
-                      src="./assets/depois-morena.png"
-                      width="456"
-                      height="581"
-                      alt="Júlia depois do treino com o Gui Viana, com mais definição muscular"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="
+                          ./assets/depois-morena-300.avif 300w,
+                          ./assets/depois-morena-456.avif 456w
+                        "
+                        sizes="(max-width: 480px) 40vw, 220px"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./assets/depois-morena-300.webp 300w,
+                          ./assets/depois-morena-456.webp 456w
+                        "
+                        sizes="(max-width: 480px) 40vw, 220px"
+                      />
+                      <img
+                        src="./assets/depois-morena.png"
+                        width="456"
+                        height="auto"
+                        alt="Júlia depois do treino com o Gui Viana, com mais definição muscular"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
                   </div>
                 </div>
               </div>
