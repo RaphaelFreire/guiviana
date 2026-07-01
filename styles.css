@@ -32,6 +32,29 @@
   --font-body: "Manrope", sans-serif;
 }
 
+/* ---------- Acessibilidade ---------- */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 12px;
+  z-index: 100;
+  background: var(--dark);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 12px;
+}
+:focus-visible {
+  outline: 2.5px solid var(--coral-deep);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
 /* ---------- Reset ---------- */
 *,
 *::before,
@@ -246,11 +269,6 @@ button {
   opacity: 0.18;
   animation: guiBlob 9s ease-in-out infinite;
 }
-.media__blob--app {
-  inset: 14px -8px -14px 14px;
-  opacity: 0.16;
-  animation-duration: 11s;
-}
 .media .photo {
   position: relative;
 }
@@ -379,9 +397,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 22px;
-}
-.hero__photo {
-  height: clamp(420px, 46vw, 520px);
 }
 .float-card {
   position: absolute;
@@ -613,9 +628,6 @@ button {
 }
 
 /* ---------- App ---------- */
-.app-photo {
-  height: clamp(360px, 40vw, 460px);
-}
 .feature {
   display: flex;
   gap: 13px;
@@ -971,14 +983,36 @@ button {
   line-height: 1.7;
 }
 
-/* ---------- Hover lift genérico ---------- */
-.lift {
-  transition:
-    transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1),
-    box-shadow 0.4s ease;
+/* ---------- Animate.css (https://animate.style/) ---------- */
+:root {
+  --animate-duration: 0.9s;
+  --animate-delay: 0.15s;
 }
-.lift:hover {
-  transform: translateY(-6px);
+/* Seções que usam data-animate ganham a animação de entrada da
+   biblioteca em vez da transição simples de opacity/translateY. */
+.reveal[data-animate] {
+  opacity: 0;
+  transform: none;
+  transition: none;
+}
+.reveal[data-animate].in {
+  opacity: 1;
+}
+
+/* Micro-interações usando os keyframes da própria biblioteca */
+.logo {
+  display: inline-block;
+}
+.logo:hover {
+  animation: rubberBand 0.9s ease-in-out;
+}
+.card:hover .stars {
+  display: inline-block;
+  animation: tada 0.9s ease-in-out;
+}
+.badge-pop__text {
+  display: inline-block;
+  animation: pulse 2.2s ease-in-out infinite;
 }
 
 /* ---------- Reveal ao rolar ---------- */

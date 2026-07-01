@@ -3,24 +3,241 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Gui Viana — Personal Trainer Online</title>
+    <title>
+      Gui Viana — Personal Trainer Online | Treino Online para Mulheres
+    </title>
     <meta
       name="description"
       content="Treino online para mulheres: consultoria, avaliação física e acompanhamento de perto. Treine de qualquer lugar e alcance seus resultados."
     />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://www.guiviana.com.br/" />
+    <meta name="theme-color" content="#ff4d2e" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff4d2e'/%3E%3Cstop offset='1' stop-color='%23ff2e86'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-weight='900' font-size='18' fill='white' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content="https://www.guiviana.com.br/" />
+    <meta
+      property="og:title"
+      content="Gui Viana — Personal Trainer Online | Treino Online para Mulheres"
+    />
+    <meta
+      property="og:description"
+      content="Treino online para mulheres: consultoria, avaliação física e acompanhamento de perto. Treine de qualquer lugar e alcance seus resultados."
+    />
+    <meta
+      property="og:image"
+      content="https://www.guiviana.com.br/assets/modelo.png"
+    />
+    <meta property="og:image:width" content="1052" />
+    <meta property="og:image:height" content="1086" />
+    <meta
+      property="og:image:alt"
+      content="Gui Viana, personal trainer, orientando o treino de uma aluna"
+    />
+    <meta property="og:site_name" content="Gui Viana" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Gui Viana — Personal Trainer Online | Treino Online para Mulheres"
+    />
+    <meta
+      name="twitter:description"
+      content="Treino online para mulheres: consultoria, avaliação física e acompanhamento de perto. Treine de qualquer lugar e alcance seus resultados."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.guiviana.com.br/assets/modelo.png"
+    />
+
+    <!-- Recursos críticos: preconnect e preload do LCP -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      as="image"
+      href="./assets/modelo.png"
+      fetchpriority="high"
     />
+
+    <!-- Fontes: carregadas sem bloquear a renderização (font-display:swap já cobre o fallback) -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@700;900&display=swap"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@700;900&display=swap"
+      />
+    </noscript>
+
+    <!-- Animate.css: só é usado depois que o usuário rola a página, não bloqueia o primeiro paint -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+    </noscript>
+
+    <!-- CSS crítico do site (bloqueante, é o essencial pro layout) -->
     <link rel="stylesheet" href="styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://www.guiviana.com.br/#website",
+            "url": "https://www.guiviana.com.br/",
+            "name": "Gui Viana — Personal Trainer Online",
+            "inLanguage": "pt-BR"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.guiviana.com.br/#webpage",
+            "url": "https://www.guiviana.com.br/",
+            "name": "Gui Viana — Personal Trainer Online | Treino Online para Mulheres",
+            "isPartOf": { "@id": "https://www.guiviana.com.br/#website" },
+            "description": "Treino online para mulheres: consultoria, avaliação física e acompanhamento de perto. Treine de qualquer lugar e alcance seus resultados.",
+            "inLanguage": "pt-BR"
+          },
+          {
+            "@type": ["Person", "Organization"],
+            "@id": "https://www.guiviana.com.br/#trainer",
+            "name": "Gui Viana",
+            "url": "https://www.guiviana.com.br/",
+            "image": "https://www.guiviana.com.br/assets/guiviana.png",
+            "jobTitle": "Personal Trainer",
+            "email": "mailto:contato@guiviana.com.br",
+            "sameAs": ["https://www.instagram.com/personal.guiiviana/"]
+          },
+          {
+            "@type": "Service",
+            "name": "Consultoria de treino online para mulheres",
+            "serviceType": "Personal trainer online",
+            "provider": { "@id": "https://www.guiviana.com.br/#trainer" },
+            "areaServed": "BR",
+            "audience": {
+              "@type": "PeopleAudience",
+              "suggestedGender": "female"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Planos Gui Viana",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "name": "Plano Mensal",
+                  "price": "197",
+                  "priceCurrency": "BRL",
+                  "url": "https://www.guiviana.com.br/#planos"
+                },
+                {
+                  "@type": "Offer",
+                  "name": "Plano Trimestral",
+                  "price": "157",
+                  "priceCurrency": "BRL",
+                  "url": "https://www.guiviana.com.br/#planos"
+                },
+                {
+                  "@type": "Offer",
+                  "name": "Plano Anual",
+                  "price": "127",
+                  "priceCurrency": "BRL",
+                  "url": "https://www.guiviana.com.br/#planos"
+                }
+              ]
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Nunca treinei na vida. Serve pra mim?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Serve, sim. Começo exatamente do seu nível, com exercícios simples e vídeo de cada um. Você evolui no seu ritmo, sem pressa e sem se machucar."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Não tenho academia. Dá pra treinar em casa?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Dá. Monto seu treino com o que você tem — em casa, no parque ou na academia. Se quiser, dá pra começar só com o peso do corpo."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Como é o acompanhamento?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Direto comigo, não com robô. Falamos pelo WhatsApp pra tirar dúvidas e fazemos check-ins pra ajustar seu treino conforme você evolui."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Em quanto tempo vejo resultado?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Com constância, a maioria das alunas sente diferença em disposição e força nas primeiras semanas e vê mudança no corpo a partir de 8 a 12 semanas."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Como funciona o pagamento?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Você escolhe o plano (mensal, trimestral ou anual) e paga no PIX, boleto ou cartão em até 12x. Sem fidelidade — cancela quando quiser."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "E se eu não me adaptar?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Você tem 7 dias de garantia. Se sentir que não é pra você, devolvo 100% do valor, sem burocracia."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
     <!-- ============ HEADER / NAV ============ -->
     <header class="header" id="header">
-      <nav class="nav">
-        <a class="logo" href="#">Gui<span class="grad-text">Viana</span></a>
+      <nav class="nav" aria-label="Principal">
+        <a class="logo" href="/" aria-label="Gui Viana — página inicial"
+          >Gui<span class="grad-text">Viana</span></a
+        >
         <div class="nav-links">
           <a href="#sobre">Sobre</a>
           <a href="#planos">Planos</a>
@@ -34,6 +251,7 @@
             id="hamburger"
             aria-label="Abrir menu"
             aria-expanded="false"
+            aria-controls="mobileMenu"
           >
             <span></span><span></span><span></span>
           </button>
@@ -48,9 +266,9 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <!-- ============ HERO ============ -->
-      <section class="container hero reveal">
+      <section class="container hero reveal" data-animate="fadeInUp">
         <div class="hero__text">
           <span class="eyebrow eyebrow--pill"
             >Treino online para mulheres · 100% pelo app</span
@@ -60,7 +278,7 @@
               >todo dia.</span
             >
           </h1>
-          <p class="lead" style="">
+          <p class="lead">
             Consultoria online e avaliação física feitas pra você emagrecer,
             ganhar força e criar uma rotina que finalmente se mantém — com
             treino sob medida e meu acompanhamento de perto, de onde você
@@ -91,8 +309,12 @@
           <div class="media__blob"></div>
           <img
             class="photo hero-photo"
+            width="530"
+            height="auto"
             src="./assets/modelo.png"
-            alt="imagem principal"
+            alt="Gui Viana, personal trainer, orientando o treino de uma aluna"
+            fetchpriority="high"
+            decoding="async"
           />
           <div class="float-card">
             <small>Resultado da aluna</small>
@@ -102,14 +324,21 @@
       </section>
 
       <!-- ============ SOBRE ============ -->
-      <section class="section section--surface reveal" id="sobre">
+      <section
+        class="section section--surface reveal"
+        id="sobre"
+        data-animate="fadeInUp"
+      >
         <div class="container split">
           <div class="split__media">
             <img
               class="photo"
               src="./assets/guiviana.png"
-              width="auto"
-              alt="imagem principal"
+              width="500"
+              height="auto"
+              alt="Gui Viana sorrindo, personal trainer especializado em treino online para mulheres"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div class="split__text">
@@ -125,16 +354,16 @@
             </p>
             <ul class="checklist">
               <li>
-                <span class="check">✓</span> Treino e avaliação 100%
-                personalizados pra você
+                <span class="check" aria-hidden="true">✓</span> Treino e
+                avaliação 100% personalizados pra você
               </li>
               <li>
-                <span class="check">✓</span> Acompanhamento real comigo — nada
-                de plano genérico
+                <span class="check" aria-hidden="true">✓</span> Acompanhamento
+                real comigo — nada de plano genérico
               </li>
               <li>
-                <span class="check">✓</span> Treine onde quiser, com o
-                equipamento que tiver
+                <span class="check" aria-hidden="true">✓</span> Treine onde
+                quiser, com o equipamento que tiver
               </li>
             </ul>
           </div>
@@ -142,7 +371,7 @@
       </section>
 
       <!-- ============ COMO FUNCIONA ============ -->
-      <section class="section section--dark reveal">
+      <section class="section section--dark reveal" data-animate="fadeIn">
         <div class="container">
           <div class="section-head">
             <span class="eyebrow eyebrow--light">Simples do começo ao fim</span>
@@ -190,11 +419,11 @@
       </section>
 
       <!-- ============ O QUE VOCÊ RECEBE ============ -->
-      <section class="section reveal">
+      <section class="section reveal" data-animate="fadeInUp">
         <div class="container">
           <div class="section-head">
             <span class="eyebrow">Tudo incluído no seu plano</span>
-            <h2 class="title-lg" style="">
+            <h2 class="title-lg">
               Tudo o que você precisa pra treinar em qualquer lugar e
               <span class="grad-text">emagrecer</span>
             </h2>
@@ -237,7 +466,7 @@
       </section>
 
       <!-- ============ TREINE PELO APP ============ -->
-      <section class="section section--surface reveal">
+      <section class="section section--surface reveal" data-animate="fadeInUp">
         <div class="container split">
           <div class="split__text">
             <span class="eyebrow">Plataforma profissional</span>
@@ -251,6 +480,8 @@
               <div class="feature">
                 <span class="feature__icon"
                   ><svg
+                    aria-hidden="true"
+                    focusable="false"
                     width="22"
                     height="22"
                     viewBox="0 0 24 24"
@@ -271,6 +502,8 @@
               <div class="feature">
                 <span class="feature__icon"
                   ><svg
+                    aria-hidden="true"
+                    focusable="false"
                     width="22"
                     height="22"
                     viewBox="0 0 24 24"
@@ -294,6 +527,8 @@
               <div class="feature">
                 <span class="feature__icon"
                   ><svg
+                    aria-hidden="true"
+                    focusable="false"
                     width="22"
                     height="22"
                     viewBox="0 0 24 24"
@@ -314,6 +549,8 @@
               <div class="feature">
                 <span class="feature__icon"
                   ><svg
+                    aria-hidden="true"
+                    focusable="false"
                     width="22"
                     height="22"
                     viewBox="0 0 24 24"
@@ -335,15 +572,18 @@
           <div class="media">
             <img
               src="./assets/celular.png"
-              width="auto"
-              alt="imagem principal"
+              width="400"
+              height="auto"
+              alt="Tela do aplicativo de treinos mostrando os exercícios do dia no celular"
+              loading="lazy"
+              decoding="async"
             />
           </div>
         </div>
       </section>
 
       <!-- ============ PLANOS ============ -->
-      <section class="section reveal" id="planos">
+      <section class="section reveal" id="planos" data-animate="fadeInUp">
         <div class="container">
           <div class="section-head">
             <span class="eyebrow">Planos</span>
@@ -371,7 +611,9 @@
               <a class="btn btn-sm" href="#contato">Assinar</a>
             </div>
             <div class="plan plan--featured">
-              <span class="badge-pop">Mais popular</span>
+              <span class="badge-pop"
+                ><span class="badge-pop__text">Mais popular</span></span
+              >
               <div class="plan__name">Trimestral</div>
               <div>
                 <span class="plan__price">R$157</span
@@ -406,12 +648,14 @@
       </section>
 
       <!-- ============ GARANTIA ============ -->
-      <section class="cta reveal">
-        <div class="container" style="">
+      <section class="cta reveal" data-animate="fadeIn">
+        <div class="container">
           <div class="trust grid grid--trust">
             <div class="feature">
               <span class="feature__icon"
                 ><svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="22"
                   height="22"
                   viewBox="0 0 24 24"
@@ -433,6 +677,8 @@
             <div class="feature">
               <span class="feature__icon"
                 ><svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="22"
                   height="22"
                   viewBox="0 0 24 24"
@@ -452,6 +698,8 @@
             <div class="feature">
               <span class="feature__icon"
                 ><svg
+                  aria-hidden="true"
+                  focusable="false"
                   width="22"
                   height="22"
                   viewBox="0 0 24 24"
@@ -472,9 +720,13 @@
       </section>
 
       <!-- ============ RESULTADOS ============ -->
-      <section class="section section--surface reveal" id="resultados">
+      <section
+        class="section section--surface reveal"
+        id="resultados"
+        data-animate="zoomIn"
+      >
         <div class="container">
-          <div class="section-head" style="">
+          <div class="section-head">
             <span class="eyebrow">Resultados reais</span>
             <h2 class="title-lg">Antes &amp; depois</h2>
           </div>
@@ -486,8 +738,11 @@
                   <div class="photo photo--r16">
                     <img
                       src="./assets/antes-branca.png"
-                      width="auto"
-                      alt="imagem principal"
+                      width="458"
+                      height="601"
+                      alt="Marina antes de iniciar o treino com o Gui Viana"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                 </div>
@@ -496,8 +751,11 @@
                   <div class="photo photo--r16">
                     <img
                       src="./assets/depois-branca.png"
-                      width="auto"
-                      alt="imagem principal"
+                      width="458"
+                      height="565"
+                      alt="Marina depois de 12 semanas de treino com o Gui Viana, resultado de -8kg"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                 </div>
@@ -513,8 +771,11 @@
                   <div class="photo photo--r16">
                     <img
                       src="./assets/antes-morena.png"
-                      width="auto"
-                      alt="imagem principal"
+                      width="459"
+                      height="625"
+                      alt="Júlia antes de iniciar o treino com o Gui Viana"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                 </div>
@@ -523,8 +784,11 @@
                   <div class="photo photo--r16">
                     <img
                       src="./assets/depois-morena.png"
-                      width="auto"
-                      alt="imagem principal"
+                      width="456"
+                      height="581"
+                      alt="Júlia depois do treino com o Gui Viana, com mais definição muscular"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                 </div>
@@ -538,14 +802,20 @@
       </section>
 
       <!-- ============ DEPOIMENTOS ============ -->
-      <section class="section reveal">
+      <section class="section reveal" data-animate="fadeInUp">
         <div class="container">
           <div class="section-head">
             <h2 class="title-md">O que as alunas dizem</h2>
           </div>
           <div class="grid grid--testi stagger">
             <div class="card">
-              <div class="stars">★★★★★</div>
+              <div
+                class="stars"
+                role="img"
+                aria-label="Avaliação 5 de 5 estrelas"
+              >
+                ★★★★★
+              </div>
               <p class="quote">
                 "Nunca consegui manter uma rotina até conhecer o Gui. Treino em
                 casa e finalmente vejo resultado."
@@ -556,7 +826,13 @@
               </div>
             </div>
             <div class="card">
-              <div class="stars">★★★★★</div>
+              <div
+                class="stars"
+                role="img"
+                aria-label="Avaliação 5 de 5 estrelas"
+              >
+                ★★★★★
+              </div>
               <p class="quote">
                 "O acompanhamento é de verdade, responde rápido e ajusta tudo
                 pra mim. Vale cada centavo."
@@ -567,7 +843,13 @@
               </div>
             </div>
             <div class="card">
-              <div class="stars">★★★★★</div>
+              <div
+                class="stars"
+                role="img"
+                aria-label="Avaliação 5 de 5 estrelas"
+              >
+                ★★★★★
+              </div>
               <p class="quote">
                 "Avaliação completa e treino que respeita meus dias. Recomendo
                 de olhos fechados."
@@ -582,7 +864,7 @@
       </section>
 
       <!-- ============ FAQ ============ -->
-      <section class="section section--surface reveal">
+      <section class="section section--surface reveal" data-animate="fadeInUp">
         <div class="container faq">
           <div class="section-head">
             <span class="eyebrow">Tirando suas dúvidas</span>
@@ -590,11 +872,15 @@
           </div>
           <div class="faq-list">
             <div class="faq-item open">
-              <button class="faq-q">
+              <button
+                class="faq-q"
+                aria-expanded="true"
+                aria-controls="faq-a-1"
+              >
                 <b>Nunca treinei na vida. Serve pra mim?</b
-                ><span class="faq-sign"></span>
+                ><span class="faq-sign" aria-hidden="true"></span>
               </button>
-              <div class="faq-a">
+              <div class="faq-a" id="faq-a-1">
                 <p>
                   Serve, sim. Começo exatamente do seu nível, com exercícios
                   simples e vídeo de cada um. Você evolui no seu ritmo, sem
@@ -603,11 +889,15 @@
               </div>
             </div>
             <div class="faq-item">
-              <button class="faq-q">
+              <button
+                class="faq-q"
+                aria-expanded="false"
+                aria-controls="faq-a-2"
+              >
                 <b>Não tenho academia. Dá pra treinar em casa?</b
-                ><span class="faq-sign"></span>
+                ><span class="faq-sign" aria-hidden="true"></span>
               </button>
-              <div class="faq-a">
+              <div class="faq-a" id="faq-a-2">
                 <p>
                   Dá. Monto seu treino com o que você tem — em casa, no parque
                   ou na academia. Se quiser, dá pra começar só com o peso do
@@ -616,10 +906,15 @@
               </div>
             </div>
             <div class="faq-item">
-              <button class="faq-q">
-                <b>Como é o acompanhamento?</b><span class="faq-sign"></span>
+              <button
+                class="faq-q"
+                aria-expanded="false"
+                aria-controls="faq-a-3"
+              >
+                <b>Como é o acompanhamento?</b
+                ><span class="faq-sign" aria-hidden="true"></span>
               </button>
-              <div class="faq-a">
+              <div class="faq-a" id="faq-a-3">
                 <p>
                   Direto comigo, não com robô. Falamos pelo WhatsApp pra tirar
                   dúvidas e fazemos check-ins pra ajustar seu treino conforme
@@ -628,11 +923,15 @@
               </div>
             </div>
             <div class="faq-item">
-              <button class="faq-q">
+              <button
+                class="faq-q"
+                aria-expanded="false"
+                aria-controls="faq-a-4"
+              >
                 <b>Em quanto tempo vejo resultado?</b
-                ><span class="faq-sign"></span>
+                ><span class="faq-sign" aria-hidden="true"></span>
               </button>
-              <div class="faq-a">
+              <div class="faq-a" id="faq-a-4">
                 <p>
                   Com constância, a maioria das alunas sente diferença em
                   disposição e força nas primeiras semanas e vê mudança no corpo
@@ -641,10 +940,15 @@
               </div>
             </div>
             <div class="faq-item">
-              <button class="faq-q">
-                <b>Como funciona o pagamento?</b><span class="faq-sign"></span>
+              <button
+                class="faq-q"
+                aria-expanded="false"
+                aria-controls="faq-a-5"
+              >
+                <b>Como funciona o pagamento?</b
+                ><span class="faq-sign" aria-hidden="true"></span>
               </button>
-              <div class="faq-a">
+              <div class="faq-a" id="faq-a-5">
                 <p>
                   Você escolhe o plano (mensal, trimestral ou anual) e paga no
                   PIX, boleto ou cartão em até 12x. Sem fidelidade — cancela
@@ -653,10 +957,15 @@
               </div>
             </div>
             <div class="faq-item">
-              <button class="faq-q">
-                <b>E se eu não me adaptar?</b><span class="faq-sign"></span>
+              <button
+                class="faq-q"
+                aria-expanded="false"
+                aria-controls="faq-a-6"
+              >
+                <b>E se eu não me adaptar?</b
+                ><span class="faq-sign" aria-hidden="true"></span>
               </button>
-              <div class="faq-a">
+              <div class="faq-a" id="faq-a-6">
                 <p>
                   Você tem 7 dias de garantia. Se sentir que não é pra você,
                   devolvo 100% do valor, sem burocracia.
@@ -671,7 +980,7 @@
       <section class="section reveal">
         <div class="container">
           <div class="grid grid--gallery stagger">
-            <div class="photo photo--r18" style="">Foto</div>
+            <div class="photo photo--r18">Foto</div>
             <div class="photo photo--r18">Foto</div>
             <div class="photo photo--r18">Foto</div>
             <div class="photo photo--r18">Foto</div>
@@ -680,7 +989,7 @@
       </section> -->
 
       <!-- ============ CTA FINAL ============ -->
-      <section class="section reveal" id="contato">
+      <section class="section reveal" id="contato" data-animate="fadeInUp">
         <div class="container">
           <div class="cta__inner">
             <h2>Pronta para começar?</h2>
@@ -702,7 +1011,14 @@
     <footer class="footer">
       <div class="logo">Gui<span class="grad-text">Viana</span></div>
       <div class="footer__meta">
-        @personal.guiiviana · contato@guiviana.com.br
+        <a
+          href="https://www.instagram.com/personal.guiiviana/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >@personal.guiiviana</a
+        >
+        ·
+        <a href="mailto:contato@guiviana.com.br">contato@guiviana.com.br</a>
       </div>
     </footer>
 
