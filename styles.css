@@ -1201,7 +1201,7 @@ button {
   }
   /* Logo não pode empurrar o header além da largura da tela */
   .logo img {
-    width: 180px;
+    width: 275px;
     height: auto;
   }
   /* Botões ocupam a largura toda: alvo de toque maior e alinhamento limpo */
