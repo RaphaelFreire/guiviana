@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>
-      Gui Viana — Personal Trainer Online | Treino Online para Mulheres
+      Guilherme Viana — Personal Trainer Online | Treino Online para Mulheres
     </title>
     <meta
       name="description"
@@ -12,11 +12,9 @@
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://www.guiviana.com.br/" />
-    <meta name="theme-color" content="#ff4d2e" />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff4d2e'/%3E%3Cstop offset='1' stop-color='%23ff2e86'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-weight='900' font-size='18' fill='white' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E"
-    />
+    <meta name="theme-color" content="#ee783b" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="alternate icon" href="./assets/favicon.svg" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -24,7 +22,7 @@
     <meta property="og:url" content="https://www.guiviana.com.br/" />
     <meta
       property="og:title"
-      content="Gui Viana — Personal Trainer Online | Treino Online para Mulheres"
+      content="Guilherme Viana — Personal Trainer Online | Treino Online para Mulheres"
     />
     <meta
       property="og:description"
@@ -60,11 +58,10 @@
     <!-- Recursos críticos: preconnect e preload do LCP -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <link
       rel="preload"
       as="image"
-      href="./assets/modelo.png"
+      href="./assets/modelo-560.avif"
       type="image/avif"
       fetchpriority="high"
     />
@@ -73,7 +70,7 @@
     <link
       rel="preload"
       as="style"
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       onload="
         this.onload = null;
         this.rel = 'stylesheet';
@@ -82,24 +79,7 @@
     <noscript>
       <link
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@700;900&display=swap"
-      />
-    </noscript>
-
-    <!-- Animate.css: só é usado depois que o usuário rola a página, não bloqueia o primeiro paint -->
-    <link
-      rel="preload"
-      as="style"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-      onload="
-        this.onload = null;
-        this.rel = 'stylesheet';
-      "
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
       />
     </noscript>
 
@@ -152,22 +132,22 @@
               "itemListElement": [
                 {
                   "@type": "Offer",
-                  "name": "Plano Mensal",
-                  "price": "197",
+                  "name": "Plano Trimestral",
+                  "price": "497",
                   "priceCurrency": "BRL",
                   "url": "https://www.guiviana.com.br/#planos"
                 },
                 {
                   "@type": "Offer",
-                  "name": "Plano Trimestral",
-                  "price": "157",
+                  "name": "Plano Semestral",
+                  "price": "697",
                   "priceCurrency": "BRL",
                   "url": "https://www.guiviana.com.br/#planos"
                 },
                 {
                   "@type": "Offer",
                   "name": "Plano Anual",
-                  "price": "127",
+                  "price": "997",
                   "priceCurrency": "BRL",
                   "url": "https://www.guiviana.com.br/#planos"
                 }
@@ -214,7 +194,7 @@
                 "name": "Como funciona o pagamento?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Você escolhe o plano (mensal, trimestral ou anual) e paga no PIX, boleto ou cartão em até 12x. Sem fidelidade — cancela quando quiser."
+                  "text": "Você escolhe o plano (trimestral, semestral ou anual) e paga no PIX, boleto ou cartão em até 12x. Sem fidelidade — cancela quando quiser."
                 }
               },
               {
@@ -237,8 +217,12 @@
     <header class="header" id="header">
       <nav class="nav" aria-label="Principal">
         <a class="logo" href="/" aria-label="Gui Viana — página inicial"
-          >Gui<span class="grad-text">Viana</span></a
-        >
+          ><img
+            src="./assets/logo-guiviana.svg"
+            width="240"
+            height="54"
+            alt="Gui Viana — Personal Trainer Online"
+        /></a>
         <div class="nav-links">
           <a href="#sobre">Sobre</a>
           <a href="#planos">Planos</a>
@@ -271,13 +255,9 @@
       <!-- ============ HERO ============ -->
       <section class="container hero reveal" data-animate="fadeInUp">
         <div class="hero__text">
-          <span class="eyebrow eyebrow--pill"
-            >Treino online para mulheres · 100% pelo app</span
-          >
+          <span class="eyebrow eyebrow--pill">100% pelo app</span>
           <h1 class="title-xl">
-            Mais forte,<br />mais você,<br /><span class="grad-text"
-              >todo dia.</span
-            >
+            Treino online para <span class="grad-text">mulheres</span>
           </h1>
           <p class="lead">
             Consultoria online e avaliação física feitas pra você emagrecer,
@@ -287,7 +267,7 @@
           </p>
           <div class="btn-row">
             <a class="btn btn-primary" href="#planos">Assinar meu plano →</a>
-            <a class="btn btn-ghost" href="#contato">Falar no WhatsApp</a>
+            <a class="btn btn-ghost btn-whatsapp" href="#">Falar no WhatsApp</a>
           </div>
           <div class="stats">
             <div>
@@ -323,7 +303,7 @@
               class="photo hero-photo"
               src="./assets/modelo.png"
               width="560"
-              height="auto"
+              height="578"
               alt="Gui Viana, personal trainer, orientando o treino de uma aluna"
               fetchpriority="high"
               decoding="async"
@@ -345,13 +325,11 @@
         <div class="container split">
           <div class="split__media">
             <picture>
-              <source type="image/avif" srcset="./assets/guiviana-500.avif" />
-              <source type="image/webp" srcset="./assets/guiviana-500.webp" />
               <img
                 class="photo"
                 src="./assets/guiviana.png"
                 width="500"
-                height="auto"
+                height="400"
                 alt="Gui Viana sorrindo, personal trainer especializado em treino online para mulheres"
                 loading="lazy"
                 decoding="async"
@@ -596,7 +574,7 @@
               <img
                 src="./assets/celular.png"
                 width="480"
-                height="auto"
+                height="563"
                 alt="Tela do aplicativo de treinos mostrando os exercícios do dia no celular"
                 loading="lazy"
                 decoding="async"
@@ -610,7 +588,7 @@
       <section class="section reveal" id="planos" data-animate="fadeInUp">
         <div class="container">
           <div class="section-head">
-            <span class="eyebrow">Planos</span>
+            <span class="eyebrow">Plano Online</span>
             <h2 class="title-lg">Escolha e comece hoje</h2>
             <p class="lead">
               Sem fidelidade — pague no PIX, boleto ou cartão e cancele quando
@@ -620,52 +598,76 @@
           </div>
           <div class="grid grid--plans stagger">
             <div class="plan">
-              <div class="plan__name">Mensal</div>
-              <div>
-                <span class="plan__price">R$197</span
-                ><span class="plan__per">/mês</span>
+              <div class="plan__name">Trimestral</div>
+              <div class="plan__term">3 meses</div>
+              <div class="plan__pricing">
+                <span class="plan__installment">12x de R$51,40</span>
+                <span class="plan__per">no cartão</span>
+                <span class="plan__cash">ou R$497 à vista</span>
               </div>
               <div class="plan__rule"></div>
               <ul>
                 <li>Treino personalizado</li>
                 <li>Avaliação física inicial</li>
-                <li>Ajustes mensais</li>
+                <li>Ajustes a cada 15 dias</li>
                 <li>Suporte no WhatsApp</li>
               </ul>
-              <a class="btn btn-sm" href="#contato">Assinar</a>
+              <a
+                class="btn btn-sm btn-plan"
+                href="#contato"
+                data-plan="Trimestral"
+                data-price="12x de R$51,40 no cartão ou R$497 à vista"
+                >Assinar</a
+              >
             </div>
             <div class="plan plan--featured">
               <span class="badge-pop"
-                ><span class="badge-pop__text">Mais popular</span></span
+                ><span class="badge-pop__text">O mais escolhido</span></span
               >
-              <div class="plan__name">Trimestral</div>
-              <div>
-                <span class="plan__price">R$157</span
-                ><span class="plan__per">/mês</span>
-              </div>
-              <div class="plan__rule"></div>
-              <ul>
-                <li>Tudo do mensal</li>
-                <li>Ajustes a cada 15 dias</li>
-                <li>Reavaliação trimestral</li>
-                <li>App de acompanhamento</li>
-              </ul>
-              <a class="btn btn-sm" href="#contato">Assinar agora</a>
-            </div>
-            <div class="plan">
               <div class="plan__name">Anual</div>
-              <div>
-                <span class="plan__price">R$127</span
-                ><span class="plan__per">/mês</span>
+              <div class="plan__term">12 meses</div>
+              <div class="plan__pricing">
+                <span class="plan__installment">12x de R$103,11</span>
+                <span class="plan__per">no cartão</span>
+                <span class="plan__cash">ou R$997 à vista</span>
               </div>
               <div class="plan__rule"></div>
               <ul>
-                <li>Tudo do trimestral</li>
+                <li>Tudo dos outros planos</li>
                 <li>Ajustes semanais</li>
-                <li>2 reavaliações</li>
+                <li>Reavaliações periódicas</li>
                 <li>Melhor custo-benefício</li>
               </ul>
-              <a class="btn btn-sm" href="#contato">Assinar</a>
+              <a
+                class="btn btn-sm btn-plan"
+                href="#contato"
+                data-plan="Anual"
+                data-price="12x de R$103,11 no cartão ou R$997 à vista"
+                >Assinar agora</a
+              >
+            </div>
+            <div class="plan">
+              <div class="plan__name">Semestral</div>
+              <div class="plan__term">6 meses</div>
+              <div class="plan__pricing">
+                <span class="plan__installment">12x de R$72,09</span>
+                <span class="plan__per">no cartão</span>
+                <span class="plan__cash">ou R$697 à vista</span>
+              </div>
+              <div class="plan__rule"></div>
+              <ul>
+                <li>Treino personalizado</li>
+                <li>Avaliação física inicial</li>
+                <li>Reavaliação semestral</li>
+                <li>App de acompanhamento</li>
+              </ul>
+              <a
+                class="btn btn-sm btn-plan"
+                href="#contato"
+                data-plan="Semestral"
+                data-price="12x de R$72,09 no cartão ou R$697 à vista"
+                >Assinar</a
+              >
             </div>
           </div>
         </div>
@@ -761,26 +763,10 @@
                   <span class="tag tag--before">ANTES</span>
                   <div class="photo photo--r16">
                     <picture>
-                      <source
-                        type="image/avif"
-                        srcset="
-                          ./assets/antes-branca-300.avif 300w,
-                          ./assets/antes-branca-458.avif 458w
-                        "
-                        sizes="(max-width: 480px) 40vw, 220px"
-                      />
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ./assets/antes-branca-300.webp 300w,
-                          ./assets/antes-branca-458.webp 458w
-                        "
-                        sizes="(max-width: 480px) 40vw, 220px"
-                      />
                       <img
                         src="./assets/antes-branca.png"
                         width="458"
-                        height="auto"
+                        height="601"
                         alt="Marina antes de iniciar o treino com o Gui Viana"
                         loading="lazy"
                         decoding="async"
@@ -792,26 +778,10 @@
                   <span class="tag tag--after">DEPOIS</span>
                   <div class="photo photo--r16">
                     <picture>
-                      <source
-                        type="image/avif"
-                        srcset="
-                          ./assets/depois-branca-300.avif 300w,
-                          ./assets/depois-branca-458.avif 458w
-                        "
-                        sizes="(max-width: 480px) 40vw, 220px"
-                      />
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ./assets/depois-branca-300.webp 300w,
-                          ./assets/depois-branca-458.webp 458w
-                        "
-                        sizes="(max-width: 480px) 40vw, 220px"
-                      />
                       <img
                         src="./assets/depois-branca.png"
                         width="458"
-                        height="auto"
+                        height="565"
                         alt="Marina depois de 12 semanas de treino com o Gui Viana, resultado de -8kg"
                         loading="lazy"
                         decoding="async"
@@ -821,7 +791,7 @@
                 </div>
               </div>
               <div class="ba__foot">
-                <b>Marina, 31 anos</b><span class="ba__metric">−8kg</span>
+                <span class="ba__metric">−10kg</span>
               </div>
             </div>
             <div class="ba">
@@ -830,26 +800,10 @@
                   <span class="tag tag--before">ANTES</span>
                   <div class="photo photo--r16">
                     <picture>
-                      <source
-                        type="image/avif"
-                        srcset="
-                          ./assets/antes-morena-300.avif 300w,
-                          ./assets/antes-morena-459.avif 459w
-                        "
-                        sizes="(max-width: 480px) 40vw, 220px"
-                      />
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ./assets/antes-morena-300.webp 300w,
-                          ./assets/antes-morena-459.webp 459w
-                        "
-                        sizes="(max-width: 480px) 40vw, 220px"
-                      />
                       <img
                         src="./assets/antes-morena.png"
                         width="459"
-                        height="auto"
+                        height="625"
                         alt="Júlia antes de iniciar o treino com o Gui Viana"
                         loading="lazy"
                         decoding="async"
@@ -861,26 +815,10 @@
                   <span class="tag tag--after">DEPOIS</span>
                   <div class="photo photo--r16">
                     <picture>
-                      <source
-                        type="image/avif"
-                        srcset="
-                          ./assets/depois-morena-300.avif 300w,
-                          ./assets/depois-morena-456.avif 456w
-                        "
-                        sizes="(max-width: 480px) 40vw, 220px"
-                      />
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ./assets/depois-morena-300.webp 300w,
-                          ./assets/depois-morena-456.webp 456w
-                        "
-                        sizes="(max-width: 480px) 40vw, 220px"
-                      />
                       <img
                         src="./assets/depois-morena.png"
                         width="456"
-                        height="auto"
+                        height="581"
                         alt="Júlia depois do treino com o Gui Viana, com mais definição muscular"
                         loading="lazy"
                         decoding="async"
@@ -890,7 +828,7 @@
                 </div>
               </div>
               <div class="ba__foot">
-                <b>Júlia, 27 anos</b><span class="ba__metric">+ definição</span>
+                <span class="ba__metric">+ definição</span>
               </div>
             </div>
           </div>
@@ -917,7 +855,6 @@
                 casa e finalmente vejo resultado."
               </p>
               <div class="author">
-                <span class="avatar">M</span>
                 <div><b>Marina S.</b><span>aluna há 8 meses</span></div>
               </div>
             </div>
@@ -934,7 +871,6 @@
                 pra mim. Vale cada centavo."
               </p>
               <div class="author">
-                <span class="avatar">J</span>
                 <div><b>Júlia R.</b><span>aluna há 1 ano</span></div>
               </div>
             </div>
@@ -951,7 +887,6 @@
                 de olhos fechados."
               </p>
               <div class="author">
-                <span class="avatar">C</span>
                 <div><b>Carla M.</b><span>aluna há 6 meses</span></div>
               </div>
             </div>
@@ -1046,8 +981,8 @@
               </button>
               <div class="faq-a" id="faq-a-5">
                 <p>
-                  Você escolhe o plano (mensal, trimestral ou anual) e paga no
-                  PIX, boleto ou cartão em até 12x. Sem fidelidade — cancela
+                  Você escolhe o plano (trimestral, semestral ou anual) e paga
+                  no PIX, boleto ou cartão em até 12x. Sem fidelidade — cancela
                   quando quiser.
                 </p>
               </div>
@@ -1072,18 +1007,6 @@
         </div>
       </section>
 
-      <!-- ============ GALERIA ============
-      <section class="section reveal">
-        <div class="container">
-          <div class="grid grid--gallery stagger">
-            <div class="photo photo--r18">Foto</div>
-            <div class="photo photo--r18">Foto</div>
-            <div class="photo photo--r18">Foto</div>
-            <div class="photo photo--r18">Foto</div>
-          </div>
-        </div>
-      </section> -->
-
       <!-- ============ CTA FINAL ============ -->
       <section class="section reveal" id="contato" data-animate="fadeInUp">
         <div class="container">
@@ -1096,7 +1019,9 @@
             </p>
             <div class="btn-row btn-row--center">
               <a class="btn btn-light" href="#planos">Assinar meu plano</a>
-              <a class="btn btn-outline-white" href="#">WhatsApp</a>
+              <a class="btn btn-outline-white btn-whatsapp" href="#"
+                >WhatsApp</a
+              >
             </div>
           </div>
         </div>
@@ -1105,16 +1030,30 @@
 
     <!-- ============ FOOTER ============ -->
     <footer class="footer">
-      <div class="logo">Gui<span class="grad-text">Viana</span></div>
+      <div class="logo">
+        <img
+          src="./assets/logo-guiviana-footer.svg"
+          width="350"
+          height="169"
+          alt="Gui Viana — Personal Trainer Online"
+          loading="lazy"
+        />
+      </div>
       <div class="footer__meta">
         <a
           href="https://www.instagram.com/personal.guiiviana/"
           target="_blank"
           rel="noopener noreferrer"
-          >@personal.guiiviana</a
+          ><img
+            src="./assets/instagram-logo.svg"
+            width="30"
+            height="30"
+            alt="Instagram"
+            loading="lazy"
+            style="margin: auto"
+          />
+          @personal.guiiviana</a
         >
-        ·
-        <a href="mailto:contato@guiviana.com.br">contato@guiviana.com.br</a>
       </div>
     </footer>
 

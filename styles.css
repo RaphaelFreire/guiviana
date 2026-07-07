@@ -1,35 +1,35 @@
 /* ============================================================
    Gui Viana — Personal Trainer Online
-   Estilo: Coral Heat  ·  Tipografia: Unbounded + Manrope
+   Estilo: Coral Heat  ·  Tipografia: Poppins
    Todo o CSS do site fica neste arquivo (nada inline no HTML).
    ============================================================ */
 
 /* ---------- Tokens ---------- */
 :root {
-  --bg: #fff4ec;
+  --bg: #fbf4ef;
   --surface: #ffffff;
-  --dark: #1a1110;
-  --ink: #1a1110;
-  --muted: #6b5d57;
-  --muted-2: #9a8b84;
-  --coral: #ff4d2e;
-  --pink: #ff2e86;
-  --coral-deep: #e33a1f;
-  --peach: #ffe3d6;
-  --peach-2: #ffe9e0;
-  --border: rgba(26, 17, 16, 0.08);
-  --grad: linear-gradient(90deg, #ff4d2e, #ff2e86);
-  --grad-135: linear-gradient(135deg, #ff4d2e, #ff2e86);
-  --grad-160: linear-gradient(160deg, #ff4d2e, #ff2e86);
-  --shadow-card: 0 16px 40px -24px rgba(26, 17, 16, 0.25);
-  --shadow-soft: 0 14px 34px -24px rgba(26, 17, 16, 0.3);
-  --shadow-pink: 0 30px 60px -22px rgba(255, 46, 134, 0.55);
+  --dark: #1e2029;
+  --ink: #1e2029;
+  --muted: #5c5e69;
+  --muted-2: #626570;
+  --coral: #ee783b;
+  --pink: #f2984e;
+  --coral-deep: #a3491a;
+  --peach: #fbe4d5;
+  --peach-2: #fcece1;
+  --border: rgba(30, 32, 41, 0.08);
+  --grad: linear-gradient(90deg, #ee783b, #f2984e);
+  --grad-135: linear-gradient(135deg, #ee783b, #f2984e);
+  --grad-160: linear-gradient(160deg, #ee783b, #f2984e);
+  --shadow-card: 0 16px 40px -24px rgba(30, 32, 41, 0.25);
+  --shadow-soft: 0 14px 34px -24px rgba(30, 32, 41, 0.3);
+  --shadow-pink: 0 30px 60px -22px rgba(238, 120, 59, 0.5);
   --radius: 24px;
   --maxw: 1200px;
   --pad-x: clamp(20px, 5vw, 48px);
   --pad-y: clamp(48px, 6vw, 84px);
-  --font-display: "Unbounded", sans-serif;
-  --font-body: "Manrope", sans-serif;
+  --font-display: "Poppins", sans-serif;
+  --font-body: "Poppins", sans-serif;
 }
 
 /* ---------- Acessibilidade ---------- */
@@ -76,6 +76,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 h1,
 h2,
@@ -119,7 +120,7 @@ button {
   font-weight: 700;
 }
 .eyebrow--light {
-  color: #ff6fa3;
+  color: #f2984e;
 }
 .eyebrow--pill {
   align-self: flex-start;
@@ -182,15 +183,16 @@ button {
   transition:
     transform 0.25s ease,
     box-shadow 0.3s ease;
+  text-transform: uppercase;
 }
 .btn-primary {
   background: var(--grad);
-  color: #fff;
-  box-shadow: 0 16px 36px -12px rgba(255, 46, 134, 0.5);
+  color: white;
+  box-shadow: 0 16px 36px -12px rgba(238, 120, 59, 0.5);
 }
 .btn-primary:hover {
   transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 20px 44px -12px rgba(255, 46, 134, 0.6);
+  box-shadow: 0 20px 44px -12px rgba(238, 120, 59, 0.6);
 }
 .btn-ghost {
   background: var(--surface);
@@ -208,9 +210,12 @@ button {
   transform: translateY(-2px);
 }
 .btn-outline-white {
-  background: rgba(255, 255, 255, 0.16);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: var(--dark);
+  border: 1px solid var(--dark);
   color: #fff;
+}
+.btn-outline-white:hover {
+  transform: translateY(-2px);
 }
 .btn-sm {
   padding: 13px 18px;
@@ -241,7 +246,7 @@ button {
   font-weight: 600;
   text-align: center;
   padding: 12px;
-  border: 1px dashed rgba(255, 77, 46, 0.35);
+  border: 1px dashed rgba(238, 120, 59, 0.35);
 }
 .photo img {
   position: absolute;
@@ -252,9 +257,6 @@ button {
 }
 .photo--r16 {
   border-radius: 16px;
-}
-.photo--r18 {
-  border-radius: 18px;
 }
 .media {
   position: relative;
@@ -278,7 +280,7 @@ button {
   position: sticky;
   top: 0;
   z-index: 30;
-  background: rgba(255, 244, 236, 0.92);
+  background: rgba(251, 244, 239, 0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(26, 17, 16, 0.06);
 }
@@ -405,7 +407,7 @@ button {
   background: #fff;
   border-radius: 16px;
   padding: 12px 16px;
-  box-shadow: 0 18px 40px -14px rgba(255, 46, 134, 0.4);
+  box-shadow: 0 18px 40px -14px rgba(238, 120, 59, 0.4);
   animation: guiFloat 6s ease-in-out infinite;
 }
 .float-card small {
@@ -540,10 +542,6 @@ button {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
   gap: 20px;
 }
-.grid--gallery {
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr));
-  gap: 14px;
-}
 .grid--trust {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
   gap: 22px;
@@ -574,7 +572,7 @@ button {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 18px;
-  color: #fff;
+  color: white;
 }
 .step h3 {
   font-weight: 700;
@@ -590,7 +588,7 @@ button {
 .value-card {
   position: relative;
   background: var(--surface);
-  border: 1.5px solid #ffd9c9;
+  border: 1.5px solid #f8d8c6;
   border-radius: 22px;
   padding: 36px 26px 28px;
   display: flex;
@@ -612,7 +610,7 @@ button {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 14px;
-  color: #fff;
+  color: white;
 }
 .value-card h3 {
   margin-top: 6px;
@@ -659,7 +657,7 @@ button {
 /* ---------- Garantia ---------- */
 .trust {
   background: var(--surface);
-  border: 1.5px solid #ffd9c9;
+  border: 1.5px solid #f8d8c6;
   border-radius: 22px;
   padding: clamp(22px, 3vw, 28px) clamp(22px, 3vw, 34px);
 }
@@ -702,7 +700,7 @@ button {
   background: rgba(26, 17, 16, 0.7);
 }
 .tag--after {
-  background: var(--grad);
+  background: var(--coral-deep);
 }
 .ba__foot {
   display: flex;
@@ -732,7 +730,7 @@ button {
   box-shadow: var(--shadow-soft);
 }
 .stars {
-  color: var(--coral);
+  color: var(--coral-deep);
   font-size: 17px;
   letter-spacing: 1px;
 }
@@ -746,17 +744,6 @@ button {
   align-items: center;
   gap: 12px;
   margin-top: auto;
-}
-.avatar {
-  width: 42px;
-  height: 42px;
-  border-radius: 999px;
-  background: var(--grad-135);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: #fff;
 }
 .author b {
   font-weight: 700;
@@ -784,14 +771,33 @@ button {
   text-transform: uppercase;
   color: var(--muted-2);
 }
-.plan__price {
+.plan__term {
+  margin-top: -8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted-2);
+}
+.plan__pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.plan__installment {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 36px;
+  font-size: 27px;
+  line-height: 1.15;
+  color: var(--coral-deep);
+}
+.plan__cash {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
 }
 .plan__per {
   color: var(--muted-2);
-  font-size: 15px;
+  font-size: 13px;
+  font-weight: 500;
 }
 .plan__rule {
   height: 1px;
@@ -812,20 +818,26 @@ button {
   border: 1.5px solid var(--coral);
   color: var(--coral-deep);
   background: transparent;
+  text-transform: uppercase;
 }
 .plan .btn-sm:hover {
   background: var(--peach-2);
 }
 .plan--featured {
-  background: var(--grad-160);
+  background: var(--grad);
   color: #fff;
   position: relative;
   box-shadow: var(--shadow-pink);
   border: 0;
 }
 .plan--featured .plan__name,
+.plan--featured .plan__term,
 .plan--featured .plan__per {
   color: rgba(255, 255, 255, 0.85);
+}
+.plan--featured .plan__installment,
+.plan--featured .plan__cash {
+  color: #fff;
 }
 .plan--featured .plan__rule {
   background: rgba(255, 255, 255, 0.25);
@@ -844,7 +856,7 @@ button {
   left: 50%;
   transform: translateX(-50%);
   background: var(--dark);
-  color: #fff;
+  color: white;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -958,13 +970,13 @@ button {
   font-family: var(--font-display);
   font-weight: 900;
   font-size: clamp(30px, 4.4vw, 46px);
-  color: #fff;
+  color: white;
   line-height: 1.06;
   letter-spacing: -0.5px;
 }
 .cta__inner p {
   font-size: clamp(15px, 1.5vw, 17px);
-  color: rgba(255, 255, 255, 0.92);
+  color: rgba(30, 32, 41, 0.9);
   max-width: 460px;
 }
 
@@ -983,13 +995,83 @@ button {
   line-height: 1.7;
 }
 
-/* ---------- Animate.css (https://animate.style/) ---------- */
-:root {
-  --animate-duration: 0.9s;
-  --animate-delay: 0.15s;
+/* ---------- Animações de entrada (locais, sem dependência externa) ---------- */
+@keyframes revFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
-/* Seções que usam data-animate ganham a animação de entrada da
-   biblioteca em vez da transição simples de opacity/translateY. */
+@keyframes revFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes revZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes guiRubber {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scaleX(1.12) scaleY(0.88);
+  }
+  45% {
+    transform: scaleX(0.9) scaleY(1.1);
+  }
+  65% {
+    transform: scaleX(1.04) scaleY(0.96);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes guiTada {
+  0% {
+    transform: scale(1) rotate(0);
+  }
+  15% {
+    transform: scale(1.08) rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: scale(1.1) rotate(4deg);
+  }
+  40%,
+  60% {
+    transform: scale(1.1) rotate(-4deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+@keyframes guiPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+/* Seções com data-animate: começam invisíveis e animam ao entrar na viewport */
 .reveal[data-animate] {
   opacity: 0;
   transform: none;
@@ -997,22 +1079,34 @@ button {
 }
 .reveal[data-animate].in {
   opacity: 1;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1);
+  animation-fill-mode: both;
+}
+.reveal[data-animate="fadeInUp"].in {
+  animation-name: revFadeUp;
+}
+.reveal[data-animate="fadeIn"].in {
+  animation-name: revFade;
+}
+.reveal[data-animate="zoomIn"].in {
+  animation-name: revZoom;
 }
 
-/* Micro-interações usando os keyframes da própria biblioteca */
+/* Micro-interações */
 .logo {
   display: inline-block;
 }
 .logo:hover {
-  animation: rubberBand 0.9s ease-in-out;
+  animation: guiRubber 0.9s ease-in-out;
 }
 .card:hover .stars {
   display: inline-block;
-  animation: tada 0.9s ease-in-out;
+  animation: guiTada 0.9s ease-in-out;
 }
 .badge-pop__text {
   display: inline-block;
-  animation: pulse 2.2s ease-in-out infinite;
+  animation: guiPulse 2.2s ease-in-out infinite;
 }
 
 /* ---------- Reveal ao rolar ---------- */
@@ -1095,6 +1189,83 @@ button {
   }
   .hamburger {
     display: flex;
+  }
+}
+
+/* ---------- Mobile compacto (≤ 480px) ---------- */
+@media (max-width: 480px) {
+  :root {
+    --pad-x: 18px;
+    --pad-y: clamp(40px, 11vw, 56px);
+    --radius: 20px;
+  }
+  /* Logo não pode empurrar o header além da largura da tela */
+  .logo img {
+    width: 180px;
+    height: auto;
+  }
+  /* Botões ocupam a largura toda: alvo de toque maior e alinhamento limpo */
+  .btn-row .btn {
+    width: 100%;
+  }
+  .plan {
+    padding: 26px 22px;
+  }
+}
+
+/* ---------- Mobile estreito (≤ 360px / referência 320px) ---------- */
+@media (max-width: 360px) {
+  :root {
+    --pad-x: 16px;
+    --pad-y: clamp(36px, 12vw, 48px);
+  }
+  .logo img {
+    width: 200px;
+  }
+  .title-xl {
+    font-size: clamp(29px, 9vw, 34px);
+    letter-spacing: -0.4px;
+  }
+  .lead {
+    font-size: 15px;
+  }
+  /* Stats: uma linha limpa, sem divisórias que quebram feio */
+  .stats {
+    gap: 14px 18px;
+    margin: auto;
+  }
+  .stat-divider {
+    display: none;
+  }
+  .stat__num {
+    font-size: 22px;
+  }
+  /* Card flutuante menor e sem estourar a borda da tela */
+  .float-card {
+    left: 0;
+    bottom: 16px;
+    padding: 10px 13px;
+  }
+  .float-card b {
+    font-size: 18px;
+  }
+  /* Selo do plano em destaque não transborda o card */
+  .badge-pop {
+    white-space: nowrap;
+    font-size: 10px;
+  }
+  .plan {
+    padding: 24px 18px;
+  }
+  .plan__installment {
+    font-size: 25px;
+  }
+  /* Antes & depois: respiro entre as duas fotos */
+  .ba__pair {
+    gap: 8px;
+  }
+  .tag {
+    font-size: 10px;
   }
 }
 

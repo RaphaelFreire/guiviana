@@ -42,27 +42,59 @@
     });
   });
 
+  /* ---------- WhatsApp: envia o plano escolhido ---------- */
+  var WHATS_NUMBER = "5517997055531";
+
+  function openWhats(message) {
+    var url =
+      "https://wa.me/" + WHATS_NUMBER + "?text=" + encodeURIComponent(message);
+    window.open(url, "_blank", "noopener");
+  }
+
+  // Botões dos planos: mandam o plano e o preço escolhidos
+  document.querySelectorAll(".btn-plan").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      var plano = btn.getAttribute("data-plan") || "";
+      var preco = btn.getAttribute("data-price") || "";
+      var msg =
+        "Olá, Gui! Tenho interesse no *Plano " +
+        plano +
+        "* (" +
+        preco +
+        "). Pode me passar os próximos passos pra começar?";
+      openWhats(msg);
+    });
+  });
+
+  // Botões genéricos de WhatsApp
+  document.querySelectorAll(".btn-whatsapp").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      openWhats(
+        "Olá, Gui! Quero saber mais sobre a consultoria de treino online. Pode me ajudar?",
+      );
+    });
+  });
+
   /* ---------- Revelação ao rolar ---------- */
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var revealEls = Array.prototype.slice.call(document.querySelectorAll(".reveal"));
+  var revealEls = Array.prototype.slice.call(
+    document.querySelectorAll(".reveal"),
+  );
 
   if (reduce) {
-    revealEls.forEach(function (el) { el.classList.add("in"); });
+    revealEls.forEach(function (el) {
+      el.classList.add("in");
+    });
     return;
   }
 
   function show(el) {
     if (el.__shown) return;
     el.__shown = true;
+    // A animação de entrada é definida no CSS via .reveal[data-animate].in
     el.classList.add("in");
-    // Efeitos de entrada da biblioteca Animate.css (https://animate.style/)
-    var fx = el.getAttribute("data-animate");
-    if (fx) {
-      el.classList.add("animate__animated");
-      fx.split(" ").forEach(function (token) {
-        if (token) el.classList.add("animate__" + token);
-      });
-    }
   }
 
   function check() {
@@ -77,12 +109,20 @@
   // Usa IntersectionObserver (não força layout/reflow a cada scroll).
   var hasIO = "IntersectionObserver" in window;
   if (hasIO) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { show(e.target); io.unobserve(e.target); }
-      });
-    }, { threshold: 0.1, rootMargin: "0px 0px -6% 0px" });
-    revealEls.forEach(function (el) { io.observe(el); });
+    var io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            show(e.target);
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -6% 0px" },
+    );
+    revealEls.forEach(function (el) {
+      io.observe(el);
+    });
   } else {
     // Fallback só para navegadores sem IntersectionObserver: aqui sim
     // precisamos medir a posição dos elementos a cada scroll/resize.
@@ -94,5 +134,7 @@
 
   // Rede de segurança: garante que nada fique invisível para sempre
   // (ex.: IO nunca disparou por algum motivo).
-  setTimeout(function () { revealEls.forEach(show); }, 2000);
+  setTimeout(function () {
+    revealEls.forEach(show);
+  }, 2000);
 })();
