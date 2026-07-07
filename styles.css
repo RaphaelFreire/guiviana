@@ -1219,9 +1219,7 @@ button {
     --pad-x: 16px;
     --pad-y: clamp(36px, 12vw, 48px);
   }
-  .logo img {
-    width: 200px;
-  }
+
   .title-xl {
     font-size: clamp(29px, 9vw, 34px);
     letter-spacing: -0.4px;
