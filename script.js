@@ -43,7 +43,7 @@
   });
 
   /* ---------- WhatsApp: envia o plano escolhido ---------- */
-  var WHATS_NUMBER = "5517997055531";
+  var WHATS_NUMBER = "5517992740959";
 
   function openWhats(message) {
     var url =
