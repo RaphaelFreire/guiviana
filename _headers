@@ -1,0 +1,27 @@
+# Cabeçalhos de cache — funciona no Cloudflare Pages e no Netlify.
+# (O GitHub Pages IGNORA este arquivo; ele só tem efeito nesses hosts.)
+#
+# Objetivo: dizer ao navegador para guardar os arquivos estáticos por bastante
+# tempo, resolvendo o aviso "Use efficient cache lifetimes" do Lighthouse.
+#
+# IMPORTANTE — cache longo exige versionar o nome do arquivo ao alterar:
+#   Ex.: styles.css -> styles.v2.css  |  guiviana.avif -> guiviana-2.avif
+# Se você trocar o conteúdo mantendo o mesmo nome, visitantes recorrentes
+# podem continuar vendo a versão antiga por até 1 ano.
+
+# Imagens, fontes e ícones: praticamente nunca mudam -> 1 ano, imutável
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# CSS e JS: também 1 ano. LEMBRE de versionar o nome quando editar.
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML: NÃO cachear por muito tempo, senão atualizações não aparecem.
+# Sempre revalida com o servidor.
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+/
+  Cache-Control: public, max-age=0, must-revalidate
